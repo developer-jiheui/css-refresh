@@ -1,0 +1,107 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+body {
+  background-color: #f6f6f6;
+  padding: 50px 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 770px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#poster {
+  width: 95vw;
+  aspect-ratio: 3 5.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 10px 5px 10px 5px lightgray;
+  padding: 50px 25px;
+}
+#top-container {
+  max-width: 770px;
+  width: calc(100% - 2 * 25px);
+  max-height: 350px;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+}
+#header-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+#title {
+  font-weight: bolder;
+  font-size: calc(4rem + 5vw);
+  width: 80%;
+}
+#num-title {
+  align-self: flex-end;
+  font-size: calc(1.5rem + 2.5vw);
+  font-weight: 600;
+  width: 20%;
+  text-align: end;
+}
+#divider {
+  max-width: 770px;
+  width: 100%;
+  height: 15px;
+  border-bottom: black solid 2px;
+}
+#bottom-text-container {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 45px;
+  font: BlinkMacSystemFont;
+  font-size: calc(0.4rem + 0.1vw);
+  line-height: 1.3;
+  display: flex;
+  font-weight: bold;
+  margin-top: 15px;
+}
+#countries {
+  width: 23%;
+}
+#colors {
+  width: 57%;
+}
+#url {
+  width: 20%;
+  text-align: end;
+}
+#bottom-container {
+  max-width: 770px;
+  width: calc(100% - 2 * 25px);
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.row:first-child .circles {
+  background-color: skyblue;
+}
+.row:nth-child(2) .circles {
+  background-color: dimgray;
+}
+.row:last-child .circles {
+  background-color: seagreen;
+}
+.circles {
+  width: calc((100% - 2 * 10px) / 3);
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
